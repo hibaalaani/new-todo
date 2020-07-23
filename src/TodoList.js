@@ -17,7 +17,7 @@ class TodoList extends Component {
 
     deleteHandler = (id) => {
         this.setState({
-            todo: this.state.todo.filter(to => to.id != id)
+            todo: this.state.todo.filter(to => to.id !== id)
         })
     }
     update = (id, updateText) => {
